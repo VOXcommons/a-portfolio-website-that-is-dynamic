@@ -222,17 +222,6 @@ const progressBar = document.querySelector(".progress span");
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-const savedTheme = localStorage.getItem("portfolio-theme");
-if (savedTheme) {
-  root.dataset.theme = savedTheme;
-}
-
-document.querySelector("#themeToggle").addEventListener("click", () => {
-  const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-  root.dataset.theme = nextTheme;
-  localStorage.setItem("portfolio-theme", nextTheme);
-});
-
 function setArtVars(element, colors) {
   element.style.setProperty("--art-a", colors[0]);
   element.style.setProperty("--art-b", colors[1]);

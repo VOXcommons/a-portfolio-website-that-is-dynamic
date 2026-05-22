@@ -14,22 +14,6 @@
   --shadow: 0 22px 54px rgba(92, 47, 16, 0.18);
 }
 
-:root[data-theme="dark"] {
-  --bg: #122421;
-  --paper: #17322e;
-  --paper-deep: #21453f;
-  --text: #fff4df;
-  --muted: #dac9ae;
-  --line: rgba(255, 244, 223, 0.18);
-  --terracotta: #ef6b27;
-  --terracotta-dark: #c34613;
-  --ochre: #f0ad35;
-  --teal: #062d2b;
-  --teal-bright: #2bb3a9;
-  --cream: #fff4df;
-  --shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -108,7 +92,7 @@ textarea {
   top: 0;
   z-index: 50;
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 1.25rem;
   padding: 1.1rem clamp(1rem, 5vw, 4rem);
